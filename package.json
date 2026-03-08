@@ -1,0 +1,47 @@
+{
+	"name": "@guideblade/webify",
+	"version": "1.0.0",
+	"description": "Webify formats plain text with proper web typography.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"default": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest",
+		"coverage": "vitest --coverage"
+	},
+	"keywords": [
+		"typography",
+		"web-typography",
+		"text-formatting",
+		"smart-quotes",
+		"html-entities",
+		"unicode",
+		"nbsp",
+		"russian",
+		"english"
+	],
+	"author": "Nikolay Kulikov <nick@guideblade.ru>",
+	"license": "MIT",
+	"type": "commonjs",
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@types/node": "^25.3.5",
+		"@vitest/coverage-v8": "^4.0.18",
+		"tsup": "^8.5.1",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.18"
+	}
+}
