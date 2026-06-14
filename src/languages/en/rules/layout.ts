@@ -3,8 +3,8 @@ import { CHARS } from '@src/config/chars';
 const DASH_SPACING_PATTERN = /(?<=[\p{L}\p{N}\p{Po}\p{Pf}"'])\s+([—–])\s+(?=\S)/gu;
 const ELLIPSIS_GLUE_PATTERN = /(…)\s+(?=[\p{L}\p{N}])/gu;
 const NEGATIVE_NUMBER_PATTERN = /(?<!\d)\s+-(\d+)/g;
-const INITIAL_TO_INITIAL_PATTERN = /(\p{Lu}\.)\s*(?=\p{Lu}\.)/gu;
-const INITIAL_TO_SURNAME_PATTERN = /(\p{Lu}\.)\s*(?=\p{Lu}\p{L}{1,})/gu;
+const INITIAL_TO_INITIAL_PATTERN = /(?<![\p{L}\p{N}_])(\p{Lu}\.)\s*(?=\p{Lu}\.)/gu;
+const INITIAL_TO_SURNAME_PATTERN = /(?<![\p{L}\p{N}_])(\p{Lu}\.)\s*(?=\p{Lu}\p{L}{1,})/gu;
 const SURNAME_TO_INITIAL_PATTERN = /(\p{Lu}\p{L}{2,})\s+(?=\p{Lu}\.)/gu;
 
 export function applyEnLayoutRules(text: string): string {

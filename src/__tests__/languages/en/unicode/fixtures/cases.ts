@@ -26,6 +26,7 @@ export const cases: Array<[string, string]> = [
 	['30" "notes in quotes".', '30″ “notes in quotes”.'],
 	['Hold... and proceed.', 'Hold… and proceed.'],
 	['A. B. C. Anderson approved it.', 'A. B. C. Anderson approved it.'],
+	['Hi. UX. UI. Test.', 'Hi. UX. UI. Test.'],
 	['Max speed is 55 mph.', 'Max speed is 55 mph.'],
 	['Tompson and Mike (TM)', 'Tompson and Mike (TM)'],
 	['Desk # 12 is reserved.', 'Desk # 12 is reserved.'],
