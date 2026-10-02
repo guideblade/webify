@@ -126,4 +126,5 @@ export const cases: Array<[string, string]> = [
 	['Доступна по ссылке https://ab-c.com.', 'Доступна по ссылке https://ab-c.com.'],
 	['Сайт ab-c.com доступен.', 'Сайт ab-c.com доступен.'],
 	['Пишите на a-b@test-mail.com.', 'Пишите на a-b@test-mail.com.'],
+	['Льготный период - 180 дней', 'Льготный период — 180 дней'],
 ];
